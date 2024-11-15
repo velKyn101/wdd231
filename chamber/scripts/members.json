@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Alpha Tech",
+        "address": "123 Innovation St, Timbuktu",
+        "phone": "(223) 555-1111",
+        "website": "https://alphatech.com",
+        "image": "alpha-tech.png",
+        "membership_level": 3,
+        "description": "Leading innovations in tech solutions."
+    },
+    {
+        "name": "Beta Solutions",
+        "address": "456 Solutions Ave, Timbuktu",
+        "phone": "(223) 555-2222",
+        "website": "https://betasolutions.com",
+        "image": "beta-solutions.png",
+        "membership_level": 2,
+        "description": "Providing efficient and reliable solutions."
+    },
+    {
+        "name": "Gamma Logistics",
+        "address": "789 Logistics Rd, Timbuktu",
+        "phone": "(223) 555-3333",
+        "website": "https://gammalogistics.com",
+        "image": "gamma-logistics.png",
+        "membership_level": 1,
+        "description": "Reliable logistics for global trade."
+    },
+    {
+        "name": "Delta Finance",
+        "address": "101 Finance Blvd, Timbuktu",
+        "phone": "(223) 555-4444",
+        "website": "https://deltafinance.com",
+        "image": "delta-finance.png",
+        "membership_level": 3,
+        "description": "Your trusted financial partner."
+    },
+    {
+        "name": "Epsilon Health",
+        "address": "202 Health St, Timbuktu",
+        "phone": "(223) 555-5555",
+        "website": "https://epsilonhealth.com",
+        "image": "epsilon-health.png",
+        "membership_level": 2,
+        "description": "Advancing health and wellness."
+    },
+    {
+        "name": "Zeta Retail",
+        "address": "303 Market Pl, Timbuktu",
+        "phone": "(223) 555-6666",
+        "website": "https://zetaretail.com",
+        "image": "zeta-retail.png",
+        "membership_level": 1,
+        "description": "Your trusted retail partner."
+    },
+    {
+        "name": "Eta Energy",
+        "address": "404 Energy Dr, Timbuktu",
+        "phone": "(223) 555-7777",
+        "website": "https://etaenergy.com",
+        "image": "eta-energy.png",
+        "membership_level": 3,
+        "description": "Powering the future of energy."
+    }
+]

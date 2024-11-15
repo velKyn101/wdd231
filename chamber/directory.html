@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <meta property="og:title" content="Brasil Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://yourwebsite.com/images/hero-image.jpg"> 
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:description" content="Connect with the Brasil Chamber of Commerce to learn about local businesses, events, and opportunities.">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="Brasil Chamber of Commerce Logo">
+                <span>Brasil<br>Chamber of Commerce</span>
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Directory</a>
+                <a href="#">Join</a>
+                <a href="#">Discover</a>
+                <button class="theme-toggle">☽</button>
+                <button id="toggleView">Toggle View</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-image">
+            <span></span>
+        </div>
+    </section>
+
+    <main>
+        <h1>Home</h1>
+        
+        <section class="info-panels">
+            <div class="panel">
+                <h2>Events</h2>
+                <div class="content"></div>
+            </div>
+            <div class="panel">
+                <h2>Current Weather</h2>
+                <div class="weather">
+                    <div class="temperature">75°F</div>
+                    <div class="description">Partly Cloudy</div>
+                    <div class="details">
+                        <p>High: 85°F</p>
+                        <p>Low: 52°F</p>
+                        <p>Humidity: 34%</p>
+                        <p>Sunrise: 7:30am</p>
+                        <p>Sunset: 9:59pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <h2>Weather Forecast</h2>
+                <div class="forecast">
+                    <p>Today: 90°F</p>
+                    <p>Wednesday: 89°F</p>
+                    <p>Thursday: 68°F</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="business-cards" id="members-container">
+            <!-- Members data will be loaded here from JSON -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Brasil Chamber of Commerce<br>Rua Pedro II, 1839<br>Teresina, Piauí<br>info@teresinaiic.org<br>+55(86) 99454-1730</p>
+            <div class="social-media">
+                <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <p>&copy; <span id="year"></span> Brasil Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/script.js" defer></script>
+</body>
+</html>
