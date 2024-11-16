@@ -228,13 +228,37 @@ footer {
 }
 
 .footer-content {
-    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
     margin: 0 auto;
+    gap: 20px;
 }
+
+.footer-contact {
+    flex: 1;
+    min-width: 200px;
+  }
 
 .footer-content p {
     margin: 10px 0;
 }
+
+.footer-social {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    min-width: 150px;
+}
+
+.footer-info {
+    flex: 1;
+    text-align: right;
+    min-width: 200px;
+  }
 
 .social-media img {
     width: 30px;
@@ -248,23 +272,39 @@ footer {
 
 
 @media (max-width: 768px) {
-    /* Info Panels - Stack them vertically */
+    /* Info Panels */
     .info-panels {
-        flex-direction: column; /* Stack panels in a column */
+        flex-direction: column; /* Stack panels vertically */
     }
 
-    /* Panels - Make them take full width */
     .panel {
-        flex: 1 1 100%; /* Make each panel take full width */
+        flex: 1 1 100%; /* Full width for each panel */
     }
 
-    /* Business Cards - Stack member cards in a column */
+    /* Business Cards */
     #members-container {
-        display: block; /* Stack cards vertically */
+        display: flex;
+        flex-direction: column; /* Stack business cards vertically */
+        align-items: center;
     }
 
     .member-card {
-        width: 100%; /* Each card takes full width */
-        margin-bottom: 20px; /* Add spacing between cards */
+        width: 90%; /* Take up most of the screen width */
+        max-width: 400px; /* Limit the maximum width */
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column; /* Stack footer sections vertically */
+        text-align: center;
+        align-items: center; /* Center align the content */
+    }
+
+    .footer-contact,
+    .footer-info,
+    .footer-social {
+        flex: unset; /* Remove flex-grow to prevent stretching */
+        min-width: unset; /* Allow the sections to shrink */
+        margin-bottom: 15px; /* Add spacing between sections */
     }
 }

@@ -78,8 +78,8 @@ function setupViewToggle() {
 }
 
 function displayFooterInfo() {
-    const yearSpan = document.getElementById("current-year");
-    const lastModifiedSpan = document.getElementById("last-modified");
+    const yearSpan = document.getElementById("year");
+    const lastModifiedSpan = document.getElementById("lastModified");
 
     yearSpan.textContent = new Date().getFullYear();
     lastModifiedSpan.textContent = document.lastModified;
