@@ -2,7 +2,23 @@ document.addEventListener("DOMContentLoaded", () => {
     loadMembers();
     setupViewToggle();
     displayFooterInfo();
+    setupThemeToggle(); // New addition
 });
+
+function setupThemeToggle() {
+    const themeToggle = document.getElementById("themeToggle");
+    const currentTheme = localStorage.getItem("theme");
+
+    if (currentTheme) {
+        document.documentElement.setAttribute("data-theme", currentTheme);
+    }
+
+    themeToggle.addEventListener("click", () => {
+        const theme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", theme);
+    });
+}
 
 async function loadMembers() {
     try {
@@ -23,7 +39,7 @@ function displayMembers(members, viewType) {
         memberCard.classList.add("member-card", viewType);
 
         memberCard.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name}">
+            <img src="images/${member.image}" alt="${member.name} loading="lazy">
             <h3>${member.name}</h3>
             <p>${member.description}</p>
             <p>Membership Level: ${getMembershipLevel(member.membership_level)}</p>
