@@ -5,8 +5,6 @@
     box-sizing: border-box;
 }
 
-
-
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
@@ -15,7 +13,7 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(90deg, #006400, #FFCC00); /* Brazilian colors */
+    background: linear-gradient(90deg, #006400, #FFCC00); 
     color: #fff;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -91,7 +89,7 @@ nav a:focus {
     justify-content: center;
     align-items: center;
     height: 300px;
-    background-color: #FFCC00; /* Brazilian yellow */
+    background-color: #FFCC00; 
     color: #333;
     text-align: center;
 }
@@ -130,9 +128,9 @@ h1 {
 
 .info-panels {
     display: flex;
-    flex-direction: row; /* Change from column to row */
+    flex-direction: row; 
     gap: 1rem;
-    flex-wrap: wrap; /* Allow wrapping of items */
+    flex-wrap: wrap; 
     margin-bottom: 20px;
 }
 
@@ -141,7 +139,7 @@ h1 {
     padding: 15px;
     border: 1px solid #006400;
     border-radius: 5px;
-    flex: 1 1 30%; /* Make each panel take up ~30% of the width */
+    flex: 1 1 30%; 
     box-sizing: border-box;
 }
 
@@ -171,7 +169,7 @@ h1 {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    width: calc(33.33% - 20px); /* Ensure 3 cards fit in one row */
+    width: calc(33.33% - 20px); 
     box-sizing: border-box;
     text-align: center;
     transition: transform 0.3s ease;
@@ -274,11 +272,11 @@ footer {
 @media (max-width: 768px) {
     /* Info Panels */
     .info-panels {
-        flex-direction: column; /* Stack panels vertically */
+        flex-direction: column; 
     }
 
     .panel {
-        flex: 1 1 100%; /* Full width for each panel */
+        flex: 1 1 100%; 
     }
 
     /* Business Cards */
@@ -289,15 +287,15 @@ footer {
     }
 
     .member-card {
-        width: 90%; /* Take up most of the screen width */
-        max-width: 400px; /* Limit the maximum width */
+        width: 90%; 
+        max-width: 400px; 
     }
 
     /* Footer */
     .footer-content {
-        flex-direction: column; /* Stack footer sections vertically */
+        flex-direction: column; 
         text-align: center;
-        align-items: center; /* Center align the content */
+        align-items: center; 
     }
 
     .footer-contact,
