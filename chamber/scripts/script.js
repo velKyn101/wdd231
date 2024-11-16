@@ -62,7 +62,7 @@ function getMembershipLevel(level) {
 }
 
 function setupViewToggle() {
-    const toggleButton = document.getElementById("toggle-view");
+    const toggleButton = document.getElementById("toggleView");
     toggleButton.addEventListener("click", () => {
         const container = document.getElementById("members-container");
         if (container.classList.contains("grid")) {
