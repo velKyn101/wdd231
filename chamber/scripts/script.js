@@ -63,8 +63,13 @@ function getMembershipLevel(level) {
 
 function setupViewToggle() {
     const toggleButton = document.getElementById("toggleView");
+    const container = document.getElementById("members-container");
+
+    // Set the initial state of the button and the container
+    container.classList.add("grid");
+    toggleButton.textContent = "Switch to List View";
+
     toggleButton.addEventListener("click", () => {
-        const container = document.getElementById("members-container");
         if (container.classList.contains("grid")) {
             container.classList.remove("grid");
             container.classList.add("list");

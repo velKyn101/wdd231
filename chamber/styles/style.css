@@ -72,6 +72,9 @@ nav a:focus {
     border-radius: 20px;
     padding: 5px 10px;
     margin-left: 15px;
+    margin: 0 auto;
+    display: block;
+    font-weight: bold;
     font-size: 0.9em;
     cursor: pointer;
     transition: background 0.3s ease, color 0.3s ease;
