@@ -55,9 +55,9 @@ function displayForecast(data) {
     const forecastDays = Object.keys(forecastByDay).slice(1, 4); // Skip current day
 
     // Display the forecast for each day
-    forecastToday.textContent = formatForecast(forecastByDay[forecastDays[0]]);
-    forecastYesterday.textContent = formatForecast(forecastByDay[forecastDays[1]]);
-    forecastBefore.textContent = formatForecast(forecastByDay[forecastDays[2]]);
+    forecastToday.innerHTML = `<strong>Today:</strong> ${formatForecast(forecastByDay[forecastDays[0]])}`;
+    forecastYesterday.innerHTML = `<strong>Tomorrow:</strong> ${formatForecast(forecastByDay[forecastDays[1]])}`;
+    forecastBefore.innerHTML = `<strong>Day After Tomorrow:</strong> ${formatForecast(forecastByDay[forecastDays[2]])}`;
 }
 
 function formatForecast(dayData) {
