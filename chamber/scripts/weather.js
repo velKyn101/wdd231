@@ -6,6 +6,8 @@ const forecastToday = document.querySelector('#today');
 const forecastYesterday = document.querySelector('#yesterday');
 const forecastBefore = document.querySelector('#dayBefore');
 
+const weatherURL = 'https://api.openweathermap.org/data/2.5/weather?lat=-5.08921&lon=-42.8016&units=imperial&appid=d44c048540aa4d699409a334ab78c7a6';
+const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=-5.08921&lon=-42.8016&units=imperial&appid=d44c048540aa4d699409a334ab78c7a6';
 
 async function apiFetch() {
     try { 
