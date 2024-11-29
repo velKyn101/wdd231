@@ -96,6 +96,12 @@ nav a:focus {
     text-align: center;
 }
 
+.hero-image {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
 .hero-image span {
     display: block;
     margin-bottom: 20px;
@@ -115,7 +121,7 @@ nav a:focus {
     display: inline-block;
     padding: 12px 25px;
     margin-top: 20px;
-    background-color: #006400; /* Green matching your site */
+    background-color: #18047a; /* Green matching your site */
     color: #fff;
     font-size: 1.1em;
     font-weight: bold;
@@ -124,12 +130,16 @@ nav a:focus {
     transition: background-color 0.3s ease, transform 0.3s ease;
     text-align: center;
     cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }
 
 .cta-button:hover,
 .cta-button:focus {
-    background-color: #004d00; /* Darker green for hover effect */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-color: #6a51e8; /* Darker green for hover effect */
 }
 
 .cta-button:active {
