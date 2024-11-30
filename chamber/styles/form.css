@@ -113,6 +113,20 @@ h2 {
     list-style-type: disc;
     padding-left: 20px;
 }
+#membership-benefits button {
+    display: block;
+    margin: 15px auto 0;
+    background-color: #006400;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#membership-benefits button:hover {
+    background-color: #004d00;
+}
 
 @keyframes fadeIn {
     from {
