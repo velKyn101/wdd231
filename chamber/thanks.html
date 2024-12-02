@@ -23,9 +23,9 @@
                 <span>Brasil<br>Chamber of Commerce</span>
             </div>
             <nav>
-                <a href="https://velkyn101.github.io/wdd231/chamber/index.html">Home</a>
-                <a href="https://velkyn101.github.io/wdd231/chamber/directory.html">Directory</a>
-                <a href="https://velkyn101.github.io/wdd231/chamber/join.html">Join</a>
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
                 <a href="#">Discover</a>
             </nav>
         </div>
@@ -34,37 +34,48 @@
     <main>
         <h1>Thanks</h1>
         <h2>Thanks for joining our chamber!</h2>
-        <a href="https://velkyn101.github.io/wdd231/chamber/index.html" class="back">Back to Home</a>
+        <div>
+            <p><strong>Name: </strong><span id="fname"></span></p>
+            <p><strong> Last Name: </strong> <span id="lname"></span></p>
+            <p><strong>Title: </strong> <span id="title"></span></p>
+            <p><strong>Email: </strong> <span id="email"></span></p>
+            <p><strong>Phone: </strong> <span id="phone"></span></p>
+            <p><strong>Organization: </strong> <span id="org"></span></p>
+            <p><strong>Membership Level:</strong> <span id="membership"></span></p>
+            <p><strong>Date Joined:</strong> <span id="form-timestamp"></span></p>
+        </div>
+        <a href="index.html" class="back">Back to Home</a>
     </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-contact">
-                <p><strong>Brazil Chambger of Commerce</strong></p>
+                <p><strong>Brazil Chamber of Commerce</strong></p>
                 <p>Rua Pedro I, 2358</p>
                 <p>Teresina, Piaui - Brazil</p>
                 <p>Email: info@teresinacoc.org</p>
                 <p>Phone: (86) 98555-2300</p>
-              </div>
+            </div>
             <div class="footer-social">
                 <a href="#" aria-label="YouTube">
                     <img src="images/youtube-favicon.webp" alt="YouTube">
-                  </a>
-                  <a href="#" aria-label="Twitter">
+                </a>
+                <a href="#" aria-label="Twitter">
                     <img src="images/x-favicon.webp" alt="Twitter">
-                  </a>
-                  <a href="#" aria-label="LinkedIn">
+                </a>
+                <a href="#" aria-label="LinkedIn">
                     <img src="images/linkedin-favicon.webp" alt="LinkedIn">
-                  </a>
+                </a>
             </div>
             <div class="footer-info">
                 <p>WDD231 Class Project</p>
                 <p>Kelvyn Diniz</p>
                 <p>&copy; <span id="year"></span> Brasil Chamber of Commerce</p>
                 <p id="lastModified"></p>
-              </div>
+            </div>
         </div>
     </footer>
+
     <script src="scripts/home.js" defer></script>
     <script src="scripts/form.js"></script>
 </body>
