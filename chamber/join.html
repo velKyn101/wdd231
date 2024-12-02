@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover the Brasil Chamber of Commerce – your gateway to Brazilian businesses, events, and opportunities. Explore our member directory, learn about local commerce, and connect with professionals driving economic growth.">
     <meta name="author" content="Kelvyn Diniz">
-    <link rel="icon" href="images/logo.webp" type="image/x-icon" />
+    <link rel="icon" href="images/logo.webp" type="image/x-icon">
     <title>Brasil Chamber of Commerce</title>
-    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/style.css">
 
     <meta property="og:title" content="Brasil Chamber of Commerce">
     <meta property="og:type" content="website">
@@ -16,107 +16,117 @@
     <meta property="og:description" content="Discover the Brasil Chamber of Commerce – your gateway to Brazilian businesses, events, and opportunities. Explore our member directory, learn about local commerce, and connect with professionals driving economic growth.">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="logo">
-                <img src="images/logo.webp" alt="Brasil Chamber of Commerce Logo">
-                <span>Brasil<br>Chamber of Commerce</span>
+    <div class="page-content">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo.webp" alt="Brasil Chamber of Commerce Logo">
+                    <span>Brasil<br>Chamber of Commerce</span>
+                </div>
+                <nav>
+                    <a href="https://velkyn101.github.io/wdd231/chamber/index.html">Home</a>
+                    <a href="https://velkyn101.github.io/wdd231/chamber/directory.html">Directory</a>
+                    <a href="https://velkyn101.github.io/wdd231/chamber/join.html">Join</a>
+                    <a href="#">Discover</a>
+                </nav>
             </div>
-            <nav>
-                <a href="https://velkyn101.github.io/wdd231/chamber/index.html">Home</a>
-                <a href="https://velkyn101.github.io/wdd231/chamber/directory.html">Directory</a>
-                <a href="https://velkyn101.github.io/wdd231/chamber/join.html">Join</a>
-                <a href="#">Discover</a>
-            </nav>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <div id="membership-benefits" style="display: none;">
-            <div>
-                <h2>Membership Level Benefits</h2>
-                <ul>
-                    <li>Non-Profit Organization: Basic benefits suitable for NGOs.</li>
-                    <li>Bronze: Entry-level benefits for small businesses.</li>
-                    <li>Silver: Enhanced benefits for mid-size companies.</li>
-                    <li>Gold: Premium benefits for top-tier members.</li>
-                </ul>
-                <button onclick="closeModal()">Close</button>
-            </div>
-        </div>
-
-
-        <form action="thanks.html" method="get" class="f1">
-            <Fieldset>
-            <h1>Contact Us!</h1>
-            <input type="hidden" id="form-timestamp" name="form-timestamp" value="<?php echo date('Y-m-d H:i:s'); ?>">
-
-            <label for="fname">
-                First Name:
-                <input type="text" id="fname" name="fname" autocomplete="given-name" required>
-            </label>
+        <main>
+            <form action="thanks.html" method="get" class="f1">
+                <fieldset>
+                    <h1>Contact Us!</h1>
+                    <input type="hidden" id="form-timestamp" name="form-timestamp" value="2024-12-02 12:00:00">
             
-                <label for="lname">
-                Last Name:  
-                <input type="text" id="lname" name="lname" autocomplete="family-name" required>
-            </label>
-            <label for="title">
-                Organizational Title:
-                <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" required>
-            </label>
-            <label for="email">
-                E-mail: 
-                <input type="email" id="email" name="email" placeholder="example@domain.org" required>
-            </label>
-            <label for="phone">
-                Phone: 
-                <input type="tel" id="phone" name="phone" required>
-            </label>
-            <label for="org">
-                Organization: 
-                <input type="text" id="org" name="org" required>
-            </label>
-            <label>
-                Membership Type:
-                <input type="radio" id="member" name="membership" value="non-profit" required> Non-Profit Organization
-                <input type="radio" id="bronze" name="membership" value="bronze" required> Bronze
-                <input type="radio" id="silver" name="membership" value="silver" required> Silver
-                <input type="radio" id="gold" name="membership" value="gold" required> Gold
-            </label>
-            <button type="button" id="benefits" onclick="showModal()">View Benefits</button>
-            <label for=""><input type="submit" value="Submit"></label>
-            </Fieldset>
-        </form>
-    </main>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" autocomplete="given-name" required>
+            
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" autocomplete="family-name" required>
+            
+                    <label for="title">Organizational Title:</label>
+                    <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" required>
+            
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.org" required>
+            
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+            
+                    <label for="org">Organization:</label>
+                    <input type="text" id="org" name="org" required>
+            
+                    <h3>Membership Level:</h3>
+                    <div>
+                        <label for="member">Non-Profit Organization</label>
+                        <input type="radio" id="member" name="membership" value="non-profit" required>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-contact">
-                <p><strong>Brazil Chambger of Commerce</strong></p>
-                <p>Rua Pedro I, 2358</p>
-                <p>Teresina, Piaui - Brazil</p>
-                <p>Email: info@teresinacoc.org</p>
-                <p>Phone: (86) 98555-2300</p>
-              </div>
-            <div class="footer-social">
-                <a href="#" aria-label="YouTube">
-                    <img src="images/youtube-favicon.webp" alt="YouTube">
-                  </a>
-                  <a href="#" aria-label="Twitter">
-                    <img src="images/x-favicon.webp" alt="Twitter">
-                  </a>
-                  <a href="#" aria-label="LinkedIn">
-                    <img src="images/linkedin-favicon.webp" alt="LinkedIn">
-                  </a>
+                        <label for="bronze">Bronze</label>        
+                        <input type="radio" id="bronze" name="membership" value="bronze" required>
+
+                        <label for="silver">Silver</label>
+                        <input type="radio" id="silver" name="membership" value="silver" required>
+            
+                        <label for="gold">Gold</label>
+                        <input type="radio" id="gold" name="membership" value="gold" required>
+                        
+                    </div>
+            
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            
+                    <button type="button" id="benefits" onclick="showModal()">View Benefits</button>
+            
+                    <input id="submit-button" type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <p><strong>Brazil Chambger of Commerce</strong></p>
+                    <p>Rua Pedro I, 2358</p>
+                    <p>Teresina, Piaui - Brazil</p>
+                    <p>Email: info@teresinacoc.org</p>
+                    <p>Phone: (86) 98555-2300</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="YouTube">
+                        <img src="images/youtube-favicon.webp" alt="YouTube">
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <img src="images/x-favicon.webp" alt="Twitter">
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <img src="images/linkedin-favicon.webp" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="footer-info">
+                    <p>WDD231 Class Project</p>
+                    <p>Kelvyn Diniz</p>
+                    <p>&copy; <span id="year"></span> Brasil Chamber of Commerce</p>
+                    <p id="lastModified"></p>
+                </div>
             </div>
-            <div class="footer-info">
-                <p>WDD231 Class Project</p>
-                <p>Kelvyn Diniz</p>
-                <p>&copy; <span id="year"></span> Brasil Chamber of Commerce</p>
-                <p id="lastModified"></p>
-              </div>
+        </footer>
+    </div>
+
+    <div id="membership-benefits">
+        <div>
+            <h2>Membership Level Benefits</h2>
+            <ul>
+                <li>Non-Profit Organization: Basic benefits suitable for NGOs.</li>
+                <li>Bronze: Entry-level benefits for small businesses.</li>
+                <li>Silver: Enhanced benefits for mid-size companies.</li>
+                <li>Gold: Premium benefits for top-tier members.</li>
+            </ul>
+            <button onclick="closeModal()">Close</button>
         </div>
-    </footer>
+    </div>
+
+
+
     <script src="scripts/home.js" defer></script>
     <script src="scripts/form.js"></script>
 </body>

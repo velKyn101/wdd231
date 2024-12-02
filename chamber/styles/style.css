@@ -351,3 +351,331 @@ footer {
         margin-bottom: 15px; /* Add spacing between sections */
     }
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #006400, #FFCC00);
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #006400;
+    border-bottom: 2px solid #fff;
+}
+
+/* Main Content */
+main h1 {
+    margin: 20px 0;
+    color: #006400;
+    text-align: center;
+    font-size: 1.8em;
+}
+h2 {
+    margin: 20px 0;
+    color: #006400;
+    text-align: center;
+    font-size: 1.5em;
+}
+.back {
+    background-color: #008500;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease;
+    max-width: 200px;
+}
+
+.back:hover {
+    background-color: #004d00;
+}
+
+#membership-benefits {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    background-color: #fff;
+    border: 2px solid #006400;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+
+}
+#membership-benefits h2 {
+    color: #006400;
+    margin-bottom: 15px;
+}
+#membership-benefits ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+#membership-benefits button {
+    display: block;
+    margin: 15px auto 0;
+    background-color: #006400;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#membership-benefits button:hover {
+    background-color: #004d00;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -55%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+/* Form Container */
+form {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #f9f9f9;
+    border: 2px solid #006400;
+    border-radius: 10px;
+    padding: 30px 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Form Heading */
+form h1 {
+    text-align: center;
+    color: #006400;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Labels */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs and Textareas */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form textarea:focus {
+    border-color: #006400;
+    box-shadow: 0 0 8px rgba(0, 100, 0, 0.3);
+    outline: none;
+}
+
+/* Radio Buttons */
+form .membership-options {
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    color: #333;
+}
+
+form input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.2); /* Enlarged for accessibility */
+}
+
+form .membership-options label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+/* Submit Button */
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #006400;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    background: #004d00;
+    transform: scale(1.03);
+}
+
+/* Fieldset and Legend */
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-weight: bold;
+    color: #006400;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+#benefits {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #b38f01;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#benefits:hover {
+    background: #FF9900;
+    transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+    background-color: #006400;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-contact p,
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-social img {
+    width: 30px;
+    margin: 0 10px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-social img:hover {
+    opacity: 0.7;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    form {
+        padding: 20px;
+    }
+
+    form h1 {
+        font-size: 1.6em;
+    }
+
+    form input[type="submit"] {
+        font-size: 1em;
+    }
+
+    form .membership-options label {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.blur {
+    filter: blur(5px);
+    pointer-events: none; /* Prevent interactions with blurred content */
+}
