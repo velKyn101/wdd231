@@ -90,6 +90,8 @@ nav a:focus {
 }
 
 .hero-image {
+    width: 1400px;
+    height: auto;
     position: relative;
     display: inline-block;
     text-align: center;
@@ -248,6 +250,8 @@ h1 {
 }
 
 .list .member-card img {
+    width: 80px;
+    height: 80px;
     margin-right: 20px;
 }
 
@@ -304,6 +308,14 @@ footer {
 
 .social-media img:hover {
     opacity: 0.7;
+}
+
+.sidebar {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #006400;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 
@@ -403,6 +415,11 @@ nav a:focus {
 }
 
 /* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 main h1 {
     margin: 20px 0;
     color: #006400;
@@ -474,6 +491,45 @@ h2 {
     background-color: #004d00;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Lazy loading */
+.gallery img[data-src] {
+    display: block;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.gallery img.loaded {
+    opacity: 1;
+}
+
+/* Visitor Info */
+.visitor-info {
+    background-color: #006400;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
 @keyframes fadeIn {
     from {
         transform: translate(-50%, -50%) scale(0.5); /* Start smaller */
@@ -481,6 +537,13 @@ h2 {
     to {
         transform: translate(-50%, -50%) scale(1); /* End at normal size */
     }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
 
@@ -623,7 +686,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+
     margin: 0 auto;
 }
 
@@ -635,11 +698,6 @@ footer {
 .footer-social img {
     width: 30px;
     margin: 0 10px;
-    transition: opacity 0.3s ease;
-}
-
-.footer-social img:hover {
-    opacity: 0.7;
 }
 
 /* Media Queries */
@@ -670,3 +728,4 @@ footer {
     filter: blur(5px);
     pointer-events: none; /* Prevent interactions with blurred content */
 }
+
