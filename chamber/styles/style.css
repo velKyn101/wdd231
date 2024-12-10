@@ -498,6 +498,7 @@ h2 {
 }
 
 .gallery img {
+    max-width: 250px;
     width: 100%;
     height: auto;
     border-radius: 5px;
@@ -686,7 +687,6 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
     margin: 0 auto;
 }
 
