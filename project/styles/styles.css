@@ -560,19 +560,14 @@ body.blur #sidebar {
 }
 
 .comment-card .position {
-    color: #777777; /* Subtle gray for position text */
+    color: #000000; /* Subtle gray for position text */
     margin-bottom: 1em; /* Space below position */
     font-style: italic; /* Differentiates position text */
 }
 
 .comment-card .message {
-    color: #2e343b; /* Default text color */
+    color: #000000; /* Default text color */
     margin-bottom: 1em; /* Space below message */
-}
-
-.comment-card .rating {
-    color: #FF6B00; /* Matches rating star color */
-    font-weight: bold; /* Emphasizes the rating */
 }
 
 #comments {

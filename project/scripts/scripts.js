@@ -14,16 +14,23 @@ addEventListener('DOMContentLoaded', function() {
 
 async function loadComments() {
   try {
-    const response = await fetch('scripts/users.json'); // Adjusted path for consistency
+    const response = await fetch('scripts/users.json');
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const comments = await response.json();
-    
-    // Select 4 random comments
-    const randomComments = getRandomItems(comments, 4);
 
-    displayComments(randomComments);
+    // Ensure at least 15 items are displayed
+    while (comments.length < 15) {
+      comments.push({
+        name: "Anonymous",
+        position: "Visitor",
+        message: "No comment provided.",
+        eval: Math.floor(Math.random() * 5) + 1 // Random rating between 1 and 5
+      });
+    }
+
+    displayComments(comments);
   } catch (error) {
     console.error("Error loading users data:", error);
   }
@@ -33,25 +40,20 @@ function displayComments(comments) {
   const commentsContainer = document.getElementById("comments-container");
   commentsContainer.innerHTML = ""; // Clear existing content
 
-  comments.forEach(comment => {
-    // Handle inconsistencies in data structure
-    const message = comment.message || comment.texto || 'No message provided';
-    const eval = comment.eval || comment.avaliacao || 0;
+  comments.slice(0, 15).forEach(comment => {
+    const message = comment.message || 'No message provided';
+    const eval = comment.eval || 0;
 
     const commentDiv = document.createElement("div");
-    commentDiv.className = "comment-card"; // Updated for consistent styling
+    commentDiv.className = "comment-card";
+
+
     commentDiv.innerHTML = `
       <h3>${comment.name}</h3>
       <p class="position">${comment.position}</p>
       <p class="message">${message}</p>
-      <p class="rating">Rating: ${'⭐'.repeat(eval)}</p>
+      <p class="rating">${'⭐'.repeat(eval)}</p>
     `;
     commentsContainer.appendChild(commentDiv);
   });
-}
-
-// Utility function to get random items
-function getRandomItems(array, count) {
-  const shuffled = array.slice().sort(() => 0.5 - Math.random()); // Shuffle the array
-  return shuffled.slice(0, count); // Return the first 'count' items
 }

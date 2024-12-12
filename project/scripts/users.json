@@ -9,13 +9,13 @@
         "name": "Agatha Cristensen",
         "position": "Writter",
         "texto": "Excelente suport! They were fast and efficient.",
-        "avaliacao": 5
+        "eval": 5
     },
     {
         "name": "Tony Spark",
         "position": "Designer",
         "texto": "User interface is intuitive and easy to navigate.",
-        "avaliacao": 4
+        "eval": 4
     },
     {
         "name": "Bruce Wayne",
