@@ -8,13 +8,13 @@
     {
         "name": "Agatha Cristensen",
         "position": "Writter",
-        "texto": "Excelente suport! They were fast and efficient.",
+        "message": "Excelente suport! They were fast and efficient.",
         "eval": 5
     },
     {
         "name": "Tony Spark",
         "position": "Designer",
-        "texto": "User interface is intuitive and easy to navigate.",
+        "message": "User interface is intuitive and easy to navigate.",
         "eval": 4
     },
     {
