@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kelvyn Diniz">
+    <meta name="description" content="WDD 231 - Final project - Kelvyn Diniz - Budget Buddy">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Budget Buddy</title>
+
+    <meta property="og:title" content="Budget Buddy">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://velkyn101.github.io/wdd231/project/images/logo.webp"> 
+    <meta property="og:url" content="https://velkyn101.github.io/wdd231/project/index.html">
+    <meta property="og:description" content="Discover the Brasil Chamber of Commerce – your gateway to Brazilian businesses, events, and opportunities. Explore our member directory, learn about local commerce, and connect with professionals driving economic growth.">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo"><img src="images/logo.webp" alt="Budget Buddy" class="logo"  loading="lazy"></a>
+            <div class="container" onclick="navEffect(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <nav id="navigation">
+            <ul id="mainbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><input type="button" value="Sign Up" onclick="location.href='signup.html'"></li>
+            </ul>
+            <ul id="sidebar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><input type="button" value="Sign Up" onclick="location.href='signup.html'"></li>
+            </ul>
+        </nav>
+    </header>
+
+        <main>
+
+            <form action="404.html" method="get" class="f1">
+                <Fieldset class="signup">
+                    <h1>Login</h1>
+                    <label>Login:<input type="text" id="fname" name="fname" required></label>
+                    <label for="">Password:<input type="password" id="pass" name="lname" required></label>
+                    <label for=""><input type="submit" value="Login"></label>
+                </Fieldset>
+            </form>
+        </main>
+
+
+    <footer>
+        <div id="links">
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Help</a>
+        </div>
+        <div id="center">
+            <img src="images/logo.webp" alt="" loading="lazy">
+            <p>&copy; <span id="currentyear"></span> | Kelvyn Diniz | Brazil</p>
+            <p id="lastModified"></p>
+        </div>
+
+        <div class="social">
+            <h3>Social Medias</h3>
+            <a href="https://github.com/velKyn101" target="_blank">
+                <img src="images/github.png" alt="fb icon" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com/in/kelvyn-diniz-1b23b0121/" target="_blank">
+                <img src="images/linkedin.png" alt="twitter icon" loading="lazy">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/facebook.png" alt="instagram icon" loading="lazy">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+window.addEventListener("DOMContentLoaded",()=>{const e=(new Date).getFullYear();document.getElementById("currentyear").textContent=e;const t=document.lastModified;document.getElementById("lastModified").textContent=t})

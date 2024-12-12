@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Peter Parker",
+        "position": "Photographer",
+        "message": "Intuitive and simple to use!",
+        "eval": 5
+    },
+    {
+        "name": "Agatha Cristensen",
+        "position": "Writter",
+        "texto": "Excelente suport! They were fast and efficient.",
+        "avaliacao": 5
+    },
+    {
+        "name": "Tony Spark",
+        "position": "Designer",
+        "texto": "User interface is intuitive and easy to navigate.",
+        "avaliacao": 4
+    },
+    {
+        "name": "Bruce Wayne",
+        "position": "CEO",
+        "message": "The best budgeting app I've ever used.",
+        "eval": 5
+    },
+    {
+        "name": "Natasha Romanoff",
+        "position": "CTO",
+        "message": "After using this app, I'm more organized and even can save more.",
+        "eval": 4
+    },
+    {
+        "name": "Steve Rogers",
+        "position": "Manager",
+        "message": "I love how easy it is to track my expenses.",
+        "eval": 5
+    },
+    {
+        "name": "Mary Lane",
+        "position": "Accountant",
+        "message": "Great tool! Always recommend to my colleagues.",
+        "eval": 5
+    },
+    {
+        "name": "Tom Riddle",
+        "position": "CFO",
+        "message": "It's simply amazing!",
+        "eval": 5
+    },
+    {
+        "name": "Wanda Maximoff",
+        "position": "HR Manager",
+        "message": "This app has made my budgeting so much easier.",
+        "eval": 5
+    },
+    {
+        "name": "Loki Laufeyson",
+        "position": "Head of Accounting",
+        "message": "I've never had a budgeting app that's so intuitive.",
+        "eval": 5
+    },
+    {
+        "name": "Thor Odinson",
+        "position": "Head of Finance",
+        "message": "I'm so happy I found this app!",
+        "eval": 5
+    },
+    {
+        "name": "Clint Barton",
+        "position": "Paralegal",
+        "message": "I'm so glad I found this app! It's so easy to use!",
+        "eval": 5
+    },
+    {
+        "name": "Wony Reasley",
+        "position": "Sales Manager",
+        "message": "My life is way much easier after I started using this app.",
+        "eval": 5
+    },
+    {
+        "name": "Hermione Langer",
+        "position": "Journalist",
+        "message": "I'm so glad I found this app! It's so easy to use!",
+        "eval": 5
+    },
+    {
+        "name": "Kanye East",
+        "position": "Professor",
+        "message": "After this app I was able to invest in my own business.",
+        "eval": 4
+       }
+  ]

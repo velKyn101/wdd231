@@ -48,3 +48,5 @@ function displayCourses(courseList) {
         coursesContainer.appendChild(courseDiv);
     });
 }
+
+
