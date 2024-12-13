@@ -487,6 +487,7 @@ footer > div:first-child a {
     #cta input[type="button"] {
         margin: 0;
     }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -500,6 +501,20 @@ footer > div:first-child a {
 
     #sidebar.show {
         display: flex;
+    }
+
+    #carousel-container {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .carousel-items {
+        display: flex;
+    }
+
+    .comment-card {
+        width: 90%; /* Smaller card size on very small screens */
+        margin: 0 5%;
+        flex: 0 0 100%; /* Mostra 1 item por vez em telas pequenas */
     }
 
 }
@@ -543,10 +558,13 @@ body.blur #sidebar {
     border-radius: 8px; /* Rounded corners */
     padding: 1.5em; /* Space inside each card */
     max-width: 300px; /* Restricts card width for uniformity */
-    flex: 1 1 calc(25% - 2em); /* Ensures 4 cards per row on larger screens */
+    flex: 0 0 calc(33.33% - 1rem); /* Mostra 3 itens por vez */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     text-align: center; /* Center-aligns content inside cards */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds hover effect */
+    word-wrap: break-word; /* Ensures long text breaks into new lines */
+    overflow-wrap: break-word; /* Alternative for word wrapping */
+
 }
 
 .comment-card:hover {
@@ -588,3 +606,51 @@ body.blur #sidebar {
     text-align: center; /* Centers the text itself */
 }
 
+#carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel-items {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.comment-card {
+    width: 30%;
+    margin: 0 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #005A8E;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+#prev {
+    margin-left: 50px;
+    left: 0;
+}
+
+#next {
+    margin-right: 50px;
+    right: 0;
+}
+
+#carousel-container button:hover {
+    color: #FF6B00;
+}
