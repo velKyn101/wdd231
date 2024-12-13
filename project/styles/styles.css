@@ -101,7 +101,9 @@ nav a:nth-child(-n + 3) {
 
 .logo {
     width: 25%;
+    margin-left: 1em;
     margin-right: auto;
+
 }
 
 body {
@@ -504,17 +506,39 @@ footer > div:first-child a {
     }
 
     #carousel-container {
-        width: 100%; /* Full width on mobile */
+        display: flex;
+        align-items: center;
+        overflow: hidden; /* Esconde os comentários fora da área visível */
+        width: 100%; /* Ocupa toda a largura da tela */
+        position: relative;
     }
+
 
     .carousel-items {
         display: flex;
+        transition: transform 0.3s ease-in-out; /* Suaviza o movimento ao arrastar */
+        gap: 1em; /* Espaçamento entre os comentários */
     }
 
     .comment-card {
-        width: 90%; /* Smaller card size on very small screens */
-        margin: 0 5%;
-        flex: 0 0 100%; /* Mostra 1 item por vez em telas pequenas */
+        flex: 0 0 100%; /* Mostra quase um card por vez em telas pequenas */
+        max-width: 300px; /* Limita o tamanho máximo do card */
+        margin: 0 auto; /* Centraliza o card */
+        background-color: #f9f9f9;
+        padding: 1.5em;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .comment-card .rating {
+        font-size: 1rem; /* Slightly smaller stars for mobile */
+        overflow: hidden;
+        text-overflow: ellipsis; /* Add ellipsis if necessary */
+    }
+
+    .comment-card h3, .comment-card .message, .comment-card .position {
+        font-size: 0.9rem; /* Reduce font size for smaller screens */
     }
 
 }
@@ -562,8 +586,10 @@ body.blur #sidebar {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     text-align: center; /* Center-aligns content inside cards */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds hover effect */
-    word-wrap: break-word; /* Ensures long text breaks into new lines */
-    overflow-wrap: break-word; /* Alternative for word wrapping */
+    word-wrap: break-word; /* Permite a quebra em palavras muito longas */
+    overflow-wrap: break-word; /* Compatível com navegadores modernos */
+    word-break: normal; /* Impede que palavras sejam quebradas desnecessariamente */
+    white-space: normal; /* Garante que o texto ocupe várias linhas, se necessário */
 
 }
 
