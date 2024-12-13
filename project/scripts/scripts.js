@@ -89,7 +89,6 @@ function storeName(event) {
   window.location.href = "thanks.html";  // Redireciona para a página de agradecimento
 }
 
-
 // Navegação do carrossel
 prevButton.addEventListener('click', () => {
   const commentsPerPage = getCommentsPerPage();
