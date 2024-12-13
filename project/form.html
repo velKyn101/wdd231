@@ -12,7 +12,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://velkyn101.github.io/wdd231/project/images/logo.webp"> 
     <meta property="og:url" content="https://velkyn101.github.io/wdd231/project/index.html">
-    <meta property="og:description" content="Discover the Brasil Chamber of Commerce – your gateway to Brazilian businesses, events, and opportunities. Explore our member directory, learn about local commerce, and connect with professionals driving economic growth.">
+    <meta property="og:description" content="Budget Buddy helps you manage your finances effortlessly. Track expenses, set saving goals, and create personalized budgets to stay on top of your financial health. Start taking control of your money today!.">
 </head>
 <body>
     <header>
@@ -42,14 +42,14 @@
 
         <main>
 
-            <form action="thanks.html" method="get" class="f1">
+            <form action="thanks.html" method="get" class="f1" onsubmit="storeName(event)">
                 <Fieldset>
                 <h1>Contact Us!</h1>
-                <label for="">First Name:<input type="text" id="fname" name="fname" required></label>
-                <label for="">Last Name:  <input type="text" id="lname" name="lname" required></label>
-                <label for="">E-mail: <input type="email" id="email" name="email" required></label>
-                <label for="">Write your message<textarea name="review" id="review"></textarea></label>
-                <label for=""><input type="submit" value="Submit"></label>
+                <label for="name">First Name:<input type="text" id="fname" name="fname" required></label>
+                <label for="surname">Last Name:  <input type="text" id="lname" name="lname" required></label>
+                <label for="email">E-mail: <input type="email" id="email" name="email" required></label>
+                <label for="message">Write your message<textarea name="review" id="review"></textarea></label>
+                <label for="submit"><input type="submit" value="Submit"></label>
                 </Fieldset>
             </form>
         </main>

@@ -80,6 +80,16 @@ function displayComments() {
   nextButton.style.display = (currentIndex + commentsPerPage < comments.length) ? "block" : "none";
 }
 
+function storeName(event) {
+  event.preventDefault();  // Previne o envio do formulário
+  
+  const name = document.getElementById("fname").value;  // Obtém o valor do nome
+  localStorage.setItem("name", name);  // Armazena o nome no localStorage
+  
+  window.location.href = "thanks.html";  // Redireciona para a página de agradecimento
+}
+
+
 // Navegação do carrossel
 prevButton.addEventListener('click', () => {
   const commentsPerPage = getCommentsPerPage();
